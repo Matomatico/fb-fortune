@@ -1,0 +1,44 @@
+#container > *:first-child {
+	padding : 2% 0 0 0;
+	border-bottom : 1px solid #e0e0e0;		
+	height : 10%;
+}	  
+.fortuna-res-title {
+	text-align : center;
+	text-transform : uppercase;
+	font-size : 1.4em;
+	font-family : sans-serif;
+	font-weight : lighter;
+}	  
+.fortuna-res-content {
+	margin : 0 auto;
+	width : 80%;
+	margin-bottom : 2%;
+	overflow : auto;
+	height : 71%;
+}
+.fortuna-res-content img {
+	border : 1px orange dashed;
+}
+.fortuna-res-content-me {
+	text-align : center;
+	margin-bottom: 20px;
+}
+.fortuna-res-content-others-friends {
+	margin-bottom: 2%;
+}
+.fortuna-res-content-others-friends img	  {
+	vertical-align : middle;
+	margin-right : 10px;
+}
+.fortuna-res-content-others-friends p {
+	display : inline;
+}
+.fortuna-res-buttons {
+	margin : 0 auto;
+	width : 80%;
+	text-align : center;
+}
+.fortuna-res-buttons button{
+	height : 100%;		
+}	 

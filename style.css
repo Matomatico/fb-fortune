@@ -1,0 +1,42 @@
+html {
+	height : 100%;
+  }
+body {
+	height : 100%;
+	background-color :#eee;
+}
+* {
+	margin : 0;
+	padding : 0;
+	border  : 0;
+}
+#container {
+	background-color: white;
+	height : 100%;
+	width : 70%;
+	margin : 0 auto;
+	min-width : 460px;
+	min-height : 370px;
+}
+/* Elementos que van después del contenedor principal */
+.horizontal {
+	margin: 0 auto;
+	width: 80%;
+	margin-bottom : 2%;
+}
+
+.blue-button {
+	margin:  0.5em auto;
+	background:#0D98FB;  
+	border: 1px solid #125CB5;
+	border-radius: 5px; 
+	box-shadow: 0 1px 1px #71C0FD inset;
+	padding: .5em 1.8em;
+	color: white;
+	font-weight:bold;
+}
+
+.blue-button:hover{
+	background:#1A5DB3;
+	cursor: pointer;
+}
