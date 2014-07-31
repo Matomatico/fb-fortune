@@ -18,7 +18,7 @@ require_once('utils.php');
 		  // Pseudocódigo (aún no se usará datos de FB)
 		  /*
 			0. Objeto de fortuna (archivo data/textos.php)
-				0.1 Sintaxis { "img_url" : "iamgen_de_fortuna.png", "texto" : "Lorem ipsum" }
+				0.1 Sintaxis { "img" : "imagen_de_fortuna", "texto" : "Lorem ipsum" }
 
 			1. El usuario se logueo con FB, se tienen los permisos básicos
 				(Escribir la plantilla)
@@ -34,28 +34,9 @@ require_once('utils.php');
 		    <img src="<?php echo getMyImage(); ?>" alt=""/>
 		    <p><?php echo getMyText(); ?></p>
 		  </section>
-		  <?php
-		  /*
 		  <section class="fortuna-res-content-others">
-		    <div class="fortuna-res-content-others-friends">
-		    	<img src="img/me.png" alt=""/>
-		    	<p>Lorem ipsum dolor sit amet.</p>
-		    </div>
-		    <div class="fortuna-res-content-others-friends">
-		    	<img src="img/me.png" alt=""/>
-		    	<p>Lorem ipsum dolor sit amet.</p>
-		    </div>
-		    <div class="fortuna-res-content-others-friends">
-		    	<img src="img/me.png" alt=""/>
-		    	<p>Lorem ipsum dolor sit amet.</p>
-		    </div>
-		    <div class="fortuna-res-content-others-friends">
-		    	<img src="img/me.png" alt=""/>
-		    	<p>Lorem ipsum dolor sit amet.</p>
-		    </div>
-		  </section>		  
-		  */
-		  ?>
+		  <?php generateFriends(); ?>
+		  </section>
 		</article>
 		<footer class="horizontal fortuna-res-buttons">
 			<button type="buttton" class="blue-button">Reiniciar</button>
