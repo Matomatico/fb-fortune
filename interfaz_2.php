@@ -1,3 +1,7 @@
+<?php 
+require_once('utils.php'); 
+?>
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -11,10 +15,10 @@
 	    <header class="horizontal"><h1 class="fortuna-res-title">The Facebook Horoscope</h1></header>
 		<article class="horizontal fortuna-res-content">
 		  <?php		  
-		  // Pseudocódigo
+		  // Pseudocódigo (aún no se usará datos de FB)
 		  /*
-			0. Objeto de fortuna
-				0.1 Sintaxis { "img_url" : "x.png", "texto" : "Lorem ipsum" }
+			0. Objeto de fortuna (archivo data/textos.php)
+				0.1 Sintaxis { "img_url" : "iamgen_de_fortuna.png", "texto" : "Lorem ipsum" }
 
 			1. El usuario se logueo con FB, se tienen los permisos básicos
 				(Escribir la plantilla)
@@ -24,28 +28,29 @@
 					1.3.1 Ciclo: Para cada uno de los elementos
 						1.3.1.1 Escribir el objeto tomando el url de la imagen y el texto
 		  */
-		  
-		  // HTML Original
-		  /*
+		  ?>
+		  <!-- Generar el 'me' -->
 		  <section class="fortuna-res-content-me">
-		    <img src="me.png" alt=""/>
-		    <p>Lorem ipsum dolor sit amet.</p>
+		    <img src="<?php echo getMyImage(); ?>" alt=""/>
+		    <p><?php echo getMyText(); ?></p>
 		  </section>
+		  <?php
+		  /*
 		  <section class="fortuna-res-content-others">
 		    <div class="fortuna-res-content-others-friends">
-		    	<img src="me.png" alt=""/>
+		    	<img src="img/me.png" alt=""/>
 		    	<p>Lorem ipsum dolor sit amet.</p>
 		    </div>
 		    <div class="fortuna-res-content-others-friends">
-		    	<img src="me.png" alt=""/>
+		    	<img src="img/me.png" alt=""/>
 		    	<p>Lorem ipsum dolor sit amet.</p>
 		    </div>
 		    <div class="fortuna-res-content-others-friends">
-		    	<img src="me.png" alt=""/>
+		    	<img src="img/me.png" alt=""/>
 		    	<p>Lorem ipsum dolor sit amet.</p>
 		    </div>
 		    <div class="fortuna-res-content-others-friends">
-		    	<img src="me.png" alt=""/>
+		    	<img src="img/me.png" alt=""/>
 		    	<p>Lorem ipsum dolor sit amet.</p>
 		    </div>
 		  </section>		  
